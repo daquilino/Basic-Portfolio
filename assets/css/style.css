@@ -1,7 +1,7 @@
 @import "reset.css";
 
-body {
-		
+html, body {
+		height: 100%;
 		background-image: url("../images/bg-image.png");
 		font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 		color:#777777 ;
@@ -15,6 +15,10 @@ header{
 	height: 90px;
 	border-bottom: 2px solid #cccccc;	
 
+}
+
+a{
+	text-decoration: none;
 }
 
 h1, h2, h3,h4,h5,h6 {
@@ -31,10 +35,10 @@ h1, h2, h3,h4,h5,h6 {
 	background: #4aaaa5;
 	float: left;
 	margin-left: 150px;
-	height:65px;
+	height:62px;
 	width: 350px;
 	margin-top:0px;
-	padding-top: 25px;
+	padding-top: 28px;
 
 }
 
@@ -45,12 +49,22 @@ nav {
 	margin-top: 35px;
 }
 
-#content{
+a.nav-menu {
 	
+	color: #4aaaa5;
+	padding: 0px 10px;
+	
+}
+a+a.nav-menu {
+	border-left:1px solid #dddddd;
 
+}
+
+.wrapper{
+	
+	min-height: 100%;
 	width:960px;
-	height: 200px;
-	margin: 40px 0px 40px 150px;
+	margin: 40px -105px 40px 150px;
 	
 }
 
@@ -64,7 +78,7 @@ nav {
 	border: 1px solid #dddddd; 
 	padding: 0 30px;
 	box-sizing: border-box;
-	margin-bottom: 40px;
+	
 }
 
 p{
@@ -73,27 +87,51 @@ p{
 	top: -10px;
 }
 
-#sidebar{
+.sidebar{
 	
 	float: right;
 	width: 270px;
 	height: 200px;
+	box-sizing: border-box;
 	background: #ffffff;
 	border: 1px solid #dddddd; 
+	padding: 30px 30px 40px 30px;
 }
+
+#sidebar-heading{
+	font-size: 24px;
+	border-bottom: 2px solid #dddddd;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+}
+
+
+li{
+	display: inline;
+
+}
+li+li{
+
+	padding-left: 6px;
+}
+
+img.sidebar-links{
+	
+	width: 60px;
+	height: 60px;
+}
+
 
 footer{
 
 	font-size: 12px;
 	color: white;
 	background: #666666;
-	border-top: 5px solid #4aaaa5;
+	border-top: 10px solid #4aaaa5;
 	width: 100%;
-	height: 45px;
+	height: 60px;
 	padding-top:35px;
 	
-	/*position: fixed;    
-	bottom: 0px;*/		
 }
 
 #about-me{
