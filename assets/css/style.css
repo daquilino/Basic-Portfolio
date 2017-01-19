@@ -70,6 +70,7 @@ a+a.nav-menu { border-left:1px solid #dddddd; }
 	border: 1px solid #dddddd; 
 	padding: 0 30px;
 	box-sizing: border-box;	
+	margin-bottom: 40px;
 }
 
 p {
@@ -143,7 +144,7 @@ footer {
 	    text-decoration: none;
 	    display: inline-block;
 	    font-size: 16px;
-	    margin: 20px 0px 30px;
+	    margin: 0px 0px 30px;
 	    cursor: pointer;
 }
 	
@@ -160,4 +161,33 @@ footer {
 
 .message { height: 200px; }
 
-.clear{ clear: both; }
+/********************* Portfolio Page Style ****************/
+.portfolio-figure {
+
+	width: 280px;
+	height: 200px;
+	box-sizing: border-box;
+	margin-bottom: 58px;
+	position: relative;			/* need so .image-label can be position: absolute */
+	
+}
+
+.image-label {
+	
+	color: white;
+	background: #4aaaa5;
+	font-size: 24px;
+	text-align: center;
+	padding: 18px 0px;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	z-index: 1;	
+}
+
+#figure1, #figure3, #figure5 { float:left; }
+#figure2, #figure4 { float:right; }
+
+
+
+.clear{ clear: both; }  /** clears float**/
