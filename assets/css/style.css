@@ -32,6 +32,8 @@ header {
 	background: #ffffff;
 	height: 90px;
 	border-bottom: 2px solid #cccccc;	
+	border-bottom-left-radius: 20px;			/* rounds bottom border*/
+	border-bottom-right-radius: 20px;			/* rounds bottom border*/
 }
 
 #my-name {
@@ -117,6 +119,8 @@ footer {
 	width: 100%;
 	height: 60px;
 	padding-top:35px;
+	border-top-left-radius: 20px;				/* rounds top border*/
+	border-top-right-radius: 20px;
 }
 
 #about-me {
@@ -183,11 +187,13 @@ footer {
 	position: absolute;
 	bottom: 10px;
 	z-index: 1;	
+	border-bottom-left-radius: 6px;			/* rounds bottom border*/
+	border-bottom-right-radius: 6px;		/* rounds bottom border*/
 }
 
 #figure1, #figure3, #figure5 { float:left; }
 #figure2, #figure4 { float:right; }
 
-
+.rounded  {border-radius: 20px;	} 				/* rounds border */ 	
 
 .clear{ clear: both; }  /** clears float**/
