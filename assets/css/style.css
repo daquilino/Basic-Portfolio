@@ -26,7 +26,26 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-/******************************  Header  *****************************/
+.rounded  {border-radius: 20px;	} 				/* rounds border */ 	
+
+.clear{ clear: both; }  /** clears float**/
+
+#main {
+	
+	float: left;
+	text-align: left;
+	width: 650px;
+	background: #ffffff;
+	border: 1px solid #dddddd; 
+	padding: 0 30px;
+	box-sizing: border-box;	
+	margin-bottom: 40px;
+}
+
+
+/*********************************************************************/
+/******************************  Header Style  ***********************/
+
 header {
 	
 	background: #ffffff;
@@ -61,18 +80,32 @@ a.nav-menu {
 	padding: 0px 10px;	
 }
 
-a+a.nav-menu { border-left:1px solid #dddddd; }
+a+a.nav-menu { border-left:1px solid #dddddd; }  
 
-#main {
+.nav-link:hover {
+
+  text-decoration: underline;
+}
+
+/*********************************************************************/
+/**************************  Index Page Style  ***********************/
+
+#about-me {
+
+	padding-top: 33px;
+	padding-bottom: 33px;
+	border-bottom: 3px solid #dddddd;
+	margin-bottom: 30px;
+}
+
+#profile-pic {
 	
-	float: left;
-	text-align: left;
-	width: 650px;
-	background: #ffffff;
-	border: 1px solid #dddddd; 
-	padding: 0 30px;
-	box-sizing: border-box;	
-	margin-bottom: 40px;
+	float:left;
+	height: 175px;
+	width: 175px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+
 }
 
 p {
@@ -80,6 +113,10 @@ p {
 	position:relative;
 	top: -10px;
 }
+
+
+/*****************************************************************/
+/********************* Side Bar Styles ***************************/
 
 .sidebar {
 	
@@ -110,6 +147,16 @@ img.sidebar-links{
 	height: 60px;
 }
 
+.sidebar-hover:hover{
+	width: 58px;
+	height: 58px;
+	margin-left: 2px;
+}
+
+
+/*****************************************************************/
+/*********************** Footer Styles ***************************/
+
 footer {
 
 	font-size: 12px;
@@ -123,22 +170,10 @@ footer {
 	border-top-right-radius: 20px;
 }
 
-#about-me {
 
-	padding-top: 33px;
-	padding-bottom: 33px;
-	border-bottom: 3px solid #dddddd;
-	margin-bottom: 30px;
-}
+/***************************************************************************/
+/*************************** Contact Page Styles ***************************/
 
-#profile-pic {
-	
-	float:left;
-	margin-right: 25px;
-	margin-bottom: 25px;
-}
-	/***************************************************************************/
-	/*************************** Contact Page Styles ***************************/
 .button {
 	    background-color: #4aaaa5;
 	    border: none;
@@ -165,14 +200,25 @@ footer {
 
 .message { height: 200px; }
 
-/********************* Portfolio Page Style ****************/
+.button:hover {
+	
+	color: #4aaaa5;
+	background: #ffffff;
+	border: 1px solid #4aaaa5 ;
+	margin-bottom: 28px;
+}
+
+
+/*********************************************************************/
+/***************************** Portfolio Page Style ******************/
+
 .portfolio-figure {
 
 	width: 280px;
 	height: 200px;
 	box-sizing: border-box;
 	margin-bottom: 58px;
-	position: relative;			/* need so .image-label can be position: absolute */
+	position: relative;		/* need so .image-label can be position: absolute */
 	
 }
 
@@ -194,6 +240,10 @@ footer {
 #figure1, #figure3, #figure5 { float:left; }
 #figure2, #figure4 { float:right; }
 
-.rounded  {border-radius: 20px;	} 				/* rounds border */ 	
 
-.clear{ clear: both; }  /** clears float**/
+
+
+
+
+
+
